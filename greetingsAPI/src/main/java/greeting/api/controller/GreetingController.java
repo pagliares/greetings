@@ -1,7 +1,7 @@
-package api.controller;
+package greeting.api.controller;
 
-import api.entity.Greeting;
-import api.service.GreetingService;
+import greeting.api.entity.Greeting;
+import greeting.api.service.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

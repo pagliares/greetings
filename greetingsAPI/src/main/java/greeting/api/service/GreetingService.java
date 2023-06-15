@@ -1,8 +1,7 @@
-package api.service;
+package greeting.api.service;
 
-import api.controller.GreetingController;
-import api.entity.Greeting;
-import api.repository.GreetingRepository;
+import greeting.api.entity.Greeting;
+import greeting.api.repository.GreetingRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

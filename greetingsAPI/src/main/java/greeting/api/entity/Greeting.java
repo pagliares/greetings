@@ -1,4 +1,4 @@
-package api.entity;
+package greeting.api.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

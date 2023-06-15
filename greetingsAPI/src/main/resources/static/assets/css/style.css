@@ -1,0 +1,143 @@
+/*--------------------------------------------------------------------------*/
+
+/* Color Pallete */
+
+:root {
+    --main: #007AA2;
+    --mainTransl: #0079a24b;
+    --white: #F1F1F1;
+    --gray1: #262626;
+    --gray2: #161616;
+    --gray3: #201E1E;
+    --grayTransl: #75756b80;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* General */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: monospace;
+    background-color: var(--gray1);
+    color: var(--white);
+}
+::selection {
+    background-color: var(--main);
+    color: var(--white);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}  
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--main); 
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    max-width: 768px;
+    min-width: 270px;
+    padding: 4rem 1rem;
+    margin: auto;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px var(--gray2);
+}
+header select {
+    outline: none;  
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 2px solid var(--main);
+    background: var(--gray3);
+    color: var(--main);
+    padding: 1rem;
+    appearance: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+header i {
+    color: var(--main);
+}
+header .country {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15vh;
+}
+main .greeting {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: fit-content;
+    padding: 1.2rem 3.2rem;
+    border: .2rem solid var(--main);
+    box-shadow: 2px 2px 3px var(--gray2);
+    text-shadow: 3px 3px 3px var(--gray2);
+    border-radius: 5px;
+    font-size: 3.5rem;
+    transition: all .3s;
+}
+main .greeting i {
+    display: flex;
+    align-items: center;
+    color: var(--main);
+}
+main .greeting .text {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Responsive */
+
+@media (max-width: 524px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 340px) {
+    main .greeting {
+        padding: 1rem;
+    }
+}
+
+/*--------------------------------------------------------------------------*/

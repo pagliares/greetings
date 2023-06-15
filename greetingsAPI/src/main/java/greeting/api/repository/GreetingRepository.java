@@ -1,6 +1,6 @@
-package api.repository;
+package greeting.api.repository;
 
-import api.entity.Greeting;
+import greeting.api.entity.Greeting;
 import org.springframework.data.repository.CrudRepository;
 
 public interface GreetingRepository extends CrudRepository<Greeting, Integer> {
