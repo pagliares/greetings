@@ -4,7 +4,7 @@ Projeto multilíngue de saudações usando SpringBoot e JavaScript.
 
 A ideia é um projeto simples em que é selecionado um país dentre algumas opções. Ao selecionar, é mostrado uma mensagem "Hello World" no idioma do país selecionado.
 
-Os países e suas respectivas saudações são armazenados em um banco de dados, acessado pelo projeto em Spring Boot. Enquanto o processo está sendo executado, é possível acessar os dados pelo endereço _**localhost:8080/api/greetings**_. Já a parte da aplicação, basta acessar a raiz do projeto em _**localhost:8080/**_.
+Os países e suas respectivas saudações são armazenados em um banco de dados H2, que está sendo executado em memória, acessado pelo projeto em Spring Boot. Enquanto o processo está sendo executado, é possível acessar os dados pelo endereço _/api/greetings_. Já a parte da aplicação, basta acessar a raiz do projeto.
 
 <img src="greetings.png" width="85%">
 
@@ -15,7 +15,7 @@ Os países e suas respectivas saudações são armazenados em um banco de dados,
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=1572B6&labelColor=070707" alt="CSS">
     <img src="https://img.shields.io/badge/Java-E84135?style=for-the-badge&logo=openjdk&logoColor=E84135&labelColor=070707" alt="Java">
     <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=6DB33F&labelColor=070707" alt="Spring Boot">
-    <img src="https://img.shields.io/badge/MySQL-316192?style=for-the-badge&logo=mysql&logoColor=316192&labelColor=070707" alt="MySQL">    
+    <img src="https://img.shields.io/badge/H2 Database-2C2D72?style=for-the-badge&logo=scala&logoColor=2C2D72&labelColor=070707" alt="H2">    
 </div>
 
 ### Execução
