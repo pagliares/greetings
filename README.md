@@ -19,7 +19,7 @@ Os países e suas respectivas saudações são armazenados em um banco de dados 
 </div>
 
 ### Execução
-O projeto foi criado com Java ([JDK-19](https://jdk.java.net/19/)) usando o [Maven](https://maven.apache.org/).
+O projeto foi criado com Java ([JDK-17](https://jdk.java.net/17/)) usando o [Maven](https://maven.apache.org/).
 
 TODO
 
