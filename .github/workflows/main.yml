@@ -26,4 +26,5 @@ jobs:
 
       - name: Deploy to Turing
         run: |
-          scp target/*.jar 2021.1.08.030@www2.bcc.unifal-mg.edu.br:/home/username/public_html/greetings/
+          cd target/
+          java -jar greetingsAPI-0.0.1-SNAPSHOT.jar
