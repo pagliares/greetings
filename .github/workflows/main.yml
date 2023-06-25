@@ -17,3 +17,9 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '17'  # ou a versão do Java desejada
+          
+      - name: Build Maven
+        run: |
+          cd greetingsAPI/
+          chmod +x mvnw
+          ./mvnw clean package
