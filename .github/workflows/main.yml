@@ -23,8 +23,3 @@ jobs:
           cd greetingsAPI/
           chmod +x mvnw
           ./mvnw clean package
-
-      - name: Deploy to Turing
-        run: |
-          cd target/
-          java -jar greetingsAPI-0.0.1-SNAPSHOT.jar
