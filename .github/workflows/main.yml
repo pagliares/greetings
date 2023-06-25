@@ -1,0 +1,19 @@
+name: Deploy to Turing
+
+on:
+  push:
+    branches:
+      - main  # ou a branch que deseja monitorar para implantação
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # ou a imagem de sistema operacional desejada
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'  # ou a versão do Java desejada
