@@ -31,7 +31,8 @@ jobs:
           
       - name: Build Maven
         run: |
-          pwd
+          ls
+          cd greetingsAPI
           chmod +x mvnw
           ./mvnw clean package
           java -jar target/greetingsAPI-0.0.1-SNAPSHOT.jar
