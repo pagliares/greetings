@@ -17,9 +17,19 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '17'  # ou a versão do Java desejada
+      
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: public_html/greetings/greetingsAPI/
           
       - name: Build Maven
         run: |
           cd greetingsAPI/
           chmod +x mvnw
           ./mvnw clean package
+          
+      
