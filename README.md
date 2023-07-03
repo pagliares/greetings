@@ -21,7 +21,7 @@ Os países e suas respectivas saudações são armazenados em um banco de dados 
 ### Execução
 O projeto foi criado com Java ([JDK-17](https://jdk.java.net/17/)) usando o [Maven](https://maven.apache.org/).
 
-TODO
+// TODO
 
 ### Referências
 O ícone da página vem do [Icon-Icons](https://icon-icons.com/pt/icone/terra-planeta-globo-ambiente-mundo/191933) e a biblioteca de ícones é a [Boxicons](https://boxicons.com/).
