@@ -24,17 +24,22 @@ jobs:
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          protocol: ftps
+          # protocol: ftps
           sftp_only: true
           port: 2345
-          remote_path: public_html/greetings/greetingsAPI/
+          remote_path: public_html/greetings/greetingsAPI/target
           
       - name: Build Maven
         run: |
-          ls
           cd greetingsAPI
           chmod +x mvnw
           ./mvnw clean package
-          java -jar target/greetingsAPI-0.0.1-SNAPSHOT.jar
-          
+      
+      - name: Replace Jar
+        run: |
+          scp target/greetingsAPI-0.0.1-SNAPSHOT.jar ${{ secrets.ftp_user }}@${{ secrets.ftp_host }}:${remote_path}/greetingsAPI-0.0.1-SNAPSHOT.jar
+      
+      - name: Restart Project
+        run: |
+          ssh ${{ secrets.ftp_user }}@${{ secrets.ftp_host }} "pkill -f greetingsAPI-0.0.1-SNAPSHOT.jar && nohup java -jar ${remote_path}/greetingsAPI-0.0.1-SNAPSHOT.jar &"          
       
