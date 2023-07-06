@@ -34,7 +34,6 @@ jobs:
           cd greetingsAPI
           chmod +x mvnw
           ./mvnw clean package
-          ls
       
       - name: Replace Jar
         run: |
