@@ -27,7 +27,7 @@ jobs:
           # protocol: ftps
           sftp_only: true
           port: ${{ secrets.ftp_port }}
-          remote_path: public_html/greetings/greetingsAPI/target
+          remote_path: public_html/greetings
           
       - name: Build Maven
         run: |
