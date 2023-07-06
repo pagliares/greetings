@@ -37,8 +37,7 @@ jobs:
       
       - name: Replace Jar
         run: |
-          pwd
-          ls
+          sshpass -p ${{ secrets.ftp_password }} scp -P ${{ secrets.ftp_port }} greetingsAPI/target/greetingsAPI-0.0.1-SNAPSHOT.jar ${{ secrets.ftp_user }}@${{ secrets.ftp_host }}:{remote_path}
       
       - name: Restart Project
         run: |
