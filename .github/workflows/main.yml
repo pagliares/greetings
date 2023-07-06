@@ -38,9 +38,11 @@ jobs:
       
       - name: Replace Jar
         run: |
+          pwd
           ls
       
       - name: Restart Project
         run: |
+          pwd
           ls
       
